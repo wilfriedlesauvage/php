@@ -6,20 +6,20 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>Exo 4 PHP</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
     </head>
     <body>
-    
-    <?php
-    $name = "Paul";
-    ?>
 
-    <p>
-        Bonjour <?php echo $name; ?>, comment vas-tu ?
-    </p>
+        <?php
+        $name = "Paul";
+        ?>
+
+        <p>
+            Bonjour <?php echo $name ?>, comment vas-tu ?
+        </p>
 
     </body>
 </html>
