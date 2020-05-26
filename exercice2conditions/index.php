@@ -1,5 +1,5 @@
 <?php
-$age = 24;
+$age = 17;
 $gender = 'homme';
 ?>
         
@@ -19,26 +19,37 @@ $gender = 'homme';
     <body>
 
     <?php
-        if ($age >= 18 && $gender == 'homme') {
-            ?>
-            <p> <?php echo 'Vous êtes un homme et vous êtes majeur !';?> </p>
-        <?php    
-        }
-        elseif ($age < 18 && $gender == 'homme') {
-            ?>
-            <p> <?php echo 'Vous êtes un homme et vous êtes mineur !';?> </p>
-        <?php
-        }
-        elseif ($age >= 18 && $gender == 'femme') {
-            ?>
-            <p> <?php echo 'Vous êtes une femme et vous êtes majeure !';?> </p>
-        <?php
-        }
-        else {
-            ?>
-            <p> <?php echo 'Vous êtes une femme et vous êtes mineur !';?> </p>
-        <?php
-        }
+            if ($age > 0 && $age < 120)
+                        if ($age >= 18 && $gender == 'homme') {
+                            ?>
+                            <p> <?php echo 'Vous êtes un homme et vous êtes majeur !';?> </p>
+                        <?php    
+                        }
+                        elseif ($age < 18 && $gender == 'homme') {
+                            ?>
+                            <p> <?php echo 'Vous êtes un homme et vous êtes mineur !';?> </p>
+                        <?php
+                        }
+                        elseif ($age >= 18 && $gender == 'femme') {
+                            ?>
+                            <p> <?php echo 'Vous êtes une femme et vous êtes majeure !';?> </p>
+                        <?php
+                        }
+                        elseif ($age <= 18 && $gender == 'femme') {
+                            ?>
+                            <p> <?php echo 'Vous êtes une femme et vous êtes mineur !';?> </p>
+                        <?php
+                        }
+                        else {
+                            ?>
+                            <p> <?php echo 'erreur genre';?> </p>
+                        <?php
+                        }
+            else {
+                ?>
+                <p> <?php echo 'erreur âge';?> </p>
+            <?php
+            }
     ?>
 
     </body>
