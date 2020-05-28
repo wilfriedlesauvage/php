@@ -1,5 +1,5 @@
 <?php
-$age = '18';
+$age = 18;
 ?>
         
 <!DOCTYPE html>
@@ -10,7 +10,7 @@ $age = '18';
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Exo 3 PHP - Conditions</title>
+        <title>Exo 4 PHP - Conditions</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
@@ -19,7 +19,7 @@ $age = '18';
 
 
         <?php
-                if ($age >= "18"){
+                if ($age >= 18){
                 ?>
                     <p> <?php echo "Tu es majeur";?> </p>
                 <?php
